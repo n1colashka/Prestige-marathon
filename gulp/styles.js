@@ -14,7 +14,7 @@ const rename = require('gulp-rename');
 module.exports = function styles() {
     gulp.src([
         'node_modules/normalize.css/normalize.css',
-        'node_modules/swiper/swiper-bundle.css',
+        // 'node_modules/swiper/swiper-bundle.css',
         // 'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
     ])
         .pipe(concat('libs.css'))

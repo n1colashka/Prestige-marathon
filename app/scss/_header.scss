@@ -1,0 +1,13 @@
+.header {
+	@include font('os');
+	color: #ffffff;
+	background: url('../images/header-bg.jpg') center no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	padding-top: 50px;
+	padding-bottom: 90px;
+}
+
+.menu {
+	display: none;
+}

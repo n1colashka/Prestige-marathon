@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  
+	@include font('os-light');
 }
 
 ul,
@@ -47,15 +47,13 @@ button {
 }
 
 .container {
-  max-width: 100%;
-  padding: 0 45px;
+  max-width: 1140px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
 .section-title {
-  
-} 
+}
 
 .btn {
- 
 }
