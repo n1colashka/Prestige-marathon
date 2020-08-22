@@ -1,0 +1,18 @@
+@mixin font($name) {
+
+  @if $name == 'os' {
+    font-family: 'Opensans-Regular', Arial, sans-serif;
+    font-weight: 400;
+  }
+
+  @if $name == 'os-eb' {
+    font-family: 'OpenSans-ExtraBold', Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  @if $name == 'os-light' {
+    font-family: 'OpenSans-Light', Arial, sans-serif;
+    font-weight: 300;
+  }
+
+}
