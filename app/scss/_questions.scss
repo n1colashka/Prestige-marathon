@@ -1,0 +1,45 @@
+.questions {
+
+    background: url('../images/quests-bg.jpg') center no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    &__box {
+        max-width: 485px;
+    }
+
+    &__box-wrapper {
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        position: relative;
+        @include font('os');
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: -0.25px;
+        color: #ffffff;
+        margin-bottom: 135px;
+        &::before {
+            position: absolute;
+            content: "";
+            background: url('../images/arrow-teo.png') center no-repeat;
+            right: 40px;
+            bottom: -100px;
+            width: 35px;
+            height: 112px;
+        }
+    }
+
+    &__btn-wrapper {
+        text-align: center;
+    }
+
+}
+

@@ -10,7 +10,8 @@ html {
 }
 
 body {
-	@include font('os-light');
+  @include font('os-light');
+  font-size: 14px;
 }
 
 ul,
@@ -31,6 +32,10 @@ p {
   padding: 0;
 }
 
+b {
+  @include font('os-eb');
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -47,13 +52,55 @@ button {
 }
 
 .container {
+  height: 100%;
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .section-title {
+  @include font('os-eb');
+  font-size: 35px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
 }
 
 .btn {
+  display: inline-block;
+  @include font('os-eb');
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  background-color: #e6b87c;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 35px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 21px 0px rgba(230, 184, 124, 0.75);
+  transition: .3s ease;
+  color: #ffffff;
+  max-width: 345px;
+  width: 100%;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #e6b87c;
+    box-shadow: none;
+  }
+
+}
+
+.accent {
+  @include font('os-eb');
+  color: #e6b87c;
+}
+
+.box {
+
+  background-color: rgba(0, 0, 0, .05);
+  padding: 48px 32px;
+
+  &__wrapper {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 30px;
+  }
 }

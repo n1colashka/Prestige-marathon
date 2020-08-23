@@ -1,0 +1,59 @@
+.sell {
+    background: url('../images/sell-home-bg.png') center no-repeat;
+    padding-top: 130px;
+    padding-bottom: 70px;
+    color: #ffffff;
+
+    &__wrapper {
+        background: url('../images/sell-home2.png') left no-repeat;
+    }
+
+    &__box {
+        margin-left: auto;
+        max-width: 600px;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        @include font('os');
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.25px;
+        margin-bottom: 40px;
+    }
+
+    &__btn-wrapper {
+        text-align: center;
+    }
+
+    &__list {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 30px;
+        padding-left: 36px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 20px;
+            height: 20px;
+            border: 4px solid #e6b87c;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__btn-wrapper {
+        margin-top: 45px;
+    }
+}
+
+
